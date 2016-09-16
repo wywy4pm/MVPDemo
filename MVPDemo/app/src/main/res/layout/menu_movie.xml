@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/load_more"
+        android:padding="@dimen/movie_padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_hotmovie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/movie_intro"
+            android:text="@string/movie_title1" />
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/more_with_icon"
+            android:textSize="@dimen/movie_more" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/card_margin"
+            android:layout_marginRight="@dimen/card_margin">
+
+            <ImageView
+                android:id="@+id/image_pic_one"
+                android:layout_width="@dimen/movie_pic_width"
+                android:layout_height="@dimen/movie_pic_height" />
+
+            <TextView
+                android:id="@+id/tv_movie_name_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image_pic_one"
+                android:maxEms="5"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:layout_alignLeft="@id/image_pic_one"
+                android:text="电影名称"
+                android:textSize="@dimen/movie_name"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/card_margin"
+            android:layout_marginRight="@dimen/card_margin">
+
+            <ImageView
+                android:id="@+id/image_pic_two"
+                android:layout_width="@dimen/movie_pic_width"
+                android:layout_height="@dimen/movie_pic_height"
+                android:src="@mipmap/movie"/>
+
+            <TextView
+                android:id="@+id/tv_movie_name_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image_pic_two"
+                android:layout_alignLeft="@id/image_pic_two"
+                android:maxEms="5"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:text="电影名称"
+                android:textSize="@dimen/movie_name"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/card_margin"
+            android:layout_marginRight="@dimen/card_margin">
+
+            <ImageView
+                android:id="@+id/image_pic_three"
+                android:layout_width="@dimen/movie_pic_width"
+                android:layout_height="@dimen/movie_pic_height"
+                android:src="@mipmap/movie"/>
+
+            <TextView
+                android:id="@+id/tv_movie_name_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image_pic_three"
+                android:layout_alignLeft="@id/image_pic_three"
+                android:maxEms="5"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:text="电影名称"
+                android:textSize="@dimen/movie_name"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
